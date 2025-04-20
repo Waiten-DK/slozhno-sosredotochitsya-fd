@@ -4,7 +4,6 @@
 
 
 /* Начать с размеров 375пх ,потом подогнать 768 */
-
 .page {
   background-color: var(--background-color);
   font-family: var(--font-family);
