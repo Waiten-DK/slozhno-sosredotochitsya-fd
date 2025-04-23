@@ -14,6 +14,9 @@
   --font-family: 'IBM Plex mono', sans-serif;
   --main-color: #F1B2CE;
   --main-text-colors:#000028;
-  --title-color: #000028;
+  --title-color: #ff0070;
+  --title-color-background: #000028;
   --link: #ff0070;
+  --color-hover: rgba(255, 0, 112, 0.40);
+  --link-focus: #F1B2CE;
 }

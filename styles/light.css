@@ -21,6 +21,9 @@
   --main-text-colors:#353430;
   --title-color:#353430 ;
   --link: #ff8dcb;
+  --color-hover: rgba(50, 49, 45, 0.40);
+  --link-focus: #353430;
+  
 }
 
 .theme-light .page {
