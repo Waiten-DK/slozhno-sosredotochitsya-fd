@@ -438,7 +438,6 @@
     justify-self: center;
     align-self: self-start;
     margin-inline-start: 20px;
-    margin-block-end: 1px;
     padding: 0;
     margin-block-start: 20px;
   }
@@ -449,25 +448,26 @@
 
   .header__title-container {
     margin-block-end: 0;
-    gap: 48px;
+    display: flex;
+    
   }
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-end: 9px;
-    margin-inline-start: 3px;
+    margin-block-end: 59px;
   }
 
   .header__subtitle {
-    margin-inline-end: 6px;
-    margin-block-end: 137px;
-    width: 49%;
+    margin-inline-end: 20px;
+    margin-block-end: 134px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
   }
 
   .section {
-    margin-block-start: 19px;
-    margin-inline-end: 0px;
-    margin-inline-start: 9px;
+    margin-block-start: 20px;
     width: 100%;
+    padding-inline: 7px;
   }
 
   .section__title {
@@ -477,12 +477,7 @@
 
   .section__too {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-inline-start: 14px;
-    gap: 0px;
-    
-  }
-
-  .section__artricle-title {
+    padding:0 10px;
   }
 
   .section__artricle-subtitle {
@@ -490,12 +485,25 @@
   }
 
   .section__th {
-    margin-block-start: 48px;
-    margin-inline-start: 1px;
+    margin-block-start: 9px;
+    grid-template-rows: 32px 974px;
+    grid-template-columns: 315px;
+    padding: 0 20px;
+    margin-inline-start: 0;
   }
 
+  .section__title-too {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--title-color);
+    font-family: var(--font-family);
+    line-height: 130%;
+    margin-inline-start: 0;
+    margin-block-start: 10px;
+  }
 
-  .title-decor {
+  .section__artricle-title-five {
+   margin-top: 12px;
   }
 
   .section__artricle-image {
@@ -505,7 +513,6 @@
 
   .section__footer {
     margin-block-start: 12px;
-    margin-inline-start: 3px;
   }
 
   .footer {
@@ -516,8 +523,8 @@
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-bottom: 15px;
-    margin-inline-start: 5px;
+    padding-bottom: 25px;
+    margin-inline-start: 0px;
   }
 
 .decorated-zone::after {
