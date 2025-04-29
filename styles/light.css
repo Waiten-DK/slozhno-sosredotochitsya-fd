@@ -10,20 +10,20 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
-  --ul-color-accent:#353430;
+  --ul-color-accent: #353430;
   --rec-color: #ff0070;
   --background-image: url(../images/cover-image-light.png);
   --background-color: #fff1f7;
   --text-background-color: #ff8dcb;
-  --title-decor: #ffc2e6 ;
-  --font-family: 'IBM Plex mono', sans-serif;
+  --title-decor: #ffc2e6;
+  --font-family: "IBM Plex mono", sans-serif;
   --main-color: #353430;
-  --main-text-colors:#353430;
-  --title-color:#353430 ;
+  --main-text-colors: #353430;
+  --title-color: #353430;
   --link: #ff8dcb;
-  --color-hover: rgba(50, 49, 45, 0.40);
+  --color-hover: rgba(50, 49, 45, 0.4);
   --link-focus: #353430;
-  
+  --title-color-background: #353430;
 }
 
 .theme-light .page {
@@ -34,21 +34,23 @@
   display: none;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
-  --accent-color: #ff0070;
-  --ul-color-accent:#353430;
-  --rec-color: #ff0070;
-  --background-image: url(../images/cover-image-light.png);
-  --background-color: #fff1f7;
-  --text-background-color: #ff8dcb;
-  --title-decor: #ffc2e6 ;
-  --font-family: 'IBM Plex mono', sans-serif;
-  --main-color: #353430;
-  --main-text-colors:#353430;
-  --title-color:#353430 ;
-  --link: #ff8dcb;
+    --accent-color: #ff0070;
+    --ul-color-accent: #353430;
+    --rec-color: #ff0070;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
+    --text-background-color: #ff8dcb;
+    --title-decor: #ffc2e6;
+    --font-family: "IBM Plex mono", sans-serif;
+    --main-color: #353430;
+    --main-text-colors: #353430;
+    --title-color: #353430;
+    --link: #ff8dcb;
+    --color-hover: rgba(50, 49, 45, 0.4);
+    --link-focus: #353430;
+    --title-color-background: #353430;
   }
   .header__rec {
     display: none;

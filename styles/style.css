@@ -136,7 +136,7 @@
 }
 
 .header__subtitle {
-  color: var(--main-text-colors);
+  color: var(--title-color-background, #000028);
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
@@ -204,12 +204,6 @@
   line-height: 130%;
 }
 
-.section__article-text-too {
-  color: var(--main-color);
-  width: 100%;
-  line-height: 130%;
-}
-
 .section__article-text-link {
   text-shadow: 3px 2px var(--link);
   text-decoration: none;
@@ -221,7 +215,6 @@
 
 .section__article-text-link:focus {
   outline: 1px solid var(--link-focus);
-  text-decoration: none;
 }
 
 .section__article-text-link:focus-visible {
@@ -289,7 +282,7 @@
 
   .decorated-zone::before {
     inset-block-start: 20px;
-    inset-inline-end: 17px;
+    inset-inline-end: 20px;
   }
 
   .header__title-container {
@@ -318,54 +311,48 @@
 
   /*-- MAIN--*/
   .content {
-    gap: 43px;
+    gap: 37px;
   }
 
   .section {
+    padding: 20px;
+    display: none;
+    width: 100%;
+  }
+
+  .section__vertical {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-    padding: 0px 20px;
-    align-items: start;
-    margin-block-start: 20px;
-    margin-block-end: 11px;
+    grid-template-columns: 1fr 2fr;
+    margin-inline-end: 1px;
+  }
+
+  .section__horisont {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  .section__title {
+    width: 100%;
+  }
+
+  .container__title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
 
   .section__artricle-title-five {
-    grid-column: 2 / 4;
     color: var(--title-color-background);
-    align-self: center;
   }
 
   .section__article-list {
-    grid-column: 2 / 4;
-  }
-
-  .section__article-list {
-    grid-column: 2 / 4;
-  }
-
-  .section__too {
-    display: grid;
-    grid-column: -1 / 1;
-  }
-
-  .section__article-text-too {
-    padding-top: 2px;
-    padding-inline: 6px;
-  }
-
-  .section__th {
-    padding: 0;
-    margin-block-start: 20px;
-    margin-inline-start: 20px;
-    margin-inline-end: 19px;
-    grid-template-rows: 29px 1260px;
-    grid-template-columns: 236px;
+    margin-inline-start: 1px;
+    margin-block-start: 1px;
   }
 
   .section__footer {
-    padding: 10px 19px 4px 20px;
+    padding: 18px 19px 4px 20px;
+    margin-block-end: 14px;
   }
 
   .section__images-items {
@@ -400,7 +387,7 @@
   }
 
   .footer {
-    min-height: 1033px;
+    min-height: 1024px;
     display: flex;
     justify-content: center;
   }
@@ -408,13 +395,12 @@
   .footer__title {
     line-height: 130%;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 15px;
   }
 }
 
 @media (width >= 1024px) {
   .content {
-    gap: 47px;
+    gap: 38px;
   }
 
   .header {
@@ -453,45 +439,21 @@
   }
 
   .section {
-    margin-block-start: 20px;
-    width: 100%;
-    padding-inline: 7px;
-  }
-
-  .section__title {
-    margin-inline-start: 14px;
-    margin-block-start: 2px;
-  }
-
-  .section__too {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 10px;
-  }
-
-  .section__artricle-subtitle {
+    gap: 10px;
     margin-block-start: 1px;
   }
 
-  .section__th {
-    margin-block-start: 9px;
-    grid-template-rows: 32px 974px;
-    grid-template-columns: 315px;
-    padding: 0 20px;
-    margin-inline-start: 0;
+  .section__title {
+    margin-block-start: 2px;
   }
 
-  .section__title-too {
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--title-color);
-    font-family: var(--font-family);
-    line-height: 130%;
-    margin-inline-start: 0;
-    margin-block-start: 10px;
+  .section__horisont {
+    gap: 19px;
   }
 
-  .section__artricle-title-five {
-    margin-top: 12px;
+  .container_horisont {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
   }
 
   .section__artricle-image {
@@ -499,29 +461,22 @@
     margin-block-start: 2px;
   }
 
-  .section__footer {
-    margin-block-start: 12px;
-  }
-
   .footer {
     min-height: 768px;
-    margin-block-start: 60px;
-    margin-inline-start: 1px;
+    margin-block-start: 42px;
   }
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-bottom: 25px;
-    margin-inline-start: 0px;
   }
 
   .decorated-zone::after {
-    inset-block-end: 21px;
-    inset-inline-start: 22px;
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
   }
 
   .decorated-zone::before {
-    inset-block-start: 19px;
-    inset-inline-end: 18px;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
   }
 }

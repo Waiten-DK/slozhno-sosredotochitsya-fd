@@ -10,22 +10,21 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
-  --ul-color-accent:#ff0070;
+  --ul-color-accent: #ff0070;
   --rec-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
   --text-background-color: #ff0070;
-  --title-decor: #bd00ff ;
+  --title-decor: #bd00ff;
   --main-text-color: #f1b2ce;
-  --font-family: 'IBM Plex mono', sans-serif;
-  --main-color: #F1B2CE;
+  --font-family: "IBM Plex mono", sans-serif;
+  --main-color: #f1b2ce;
   --title-color: #ff0070;
   --link: #ff0070;
-  --color-hover: rgba(255, 0, 112, 0.40);
-  --link-focus: #F1B2CE;
+  --color-hover: rgba(255, 0, 112, 0.4);
+  --link-focus: #f1b2ce;
+  --title-color-background: #000028;
 }
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
-
-
